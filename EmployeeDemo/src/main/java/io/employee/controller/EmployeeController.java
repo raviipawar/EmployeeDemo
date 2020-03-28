@@ -77,7 +77,5 @@ public class EmployeeController {
 		List<Employee> employees = employeeRepository.findAll();
 		Employee minAgeEmployee = employees.stream().max(comparator).get();
 		return minAgeEmployee;
-
 	}
-
 }
